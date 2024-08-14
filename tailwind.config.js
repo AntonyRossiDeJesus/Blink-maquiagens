@@ -29,7 +29,7 @@ module.exports = {
         "custom-icon-seta-esquerda": "url('./assets/seta-esquerda.svg')",
         "custom-icon-seta-direita": "url('./assets/seta-direita.svg')",
 
-        "custom-icon-seta": "url('/assets/seta.svg')",
+        "custom-icon-seta": "url('assets/seta.svg')",
 
         "custom-icon-whatssap": "url('./assets/icone-whatszapp-amarelo.svg')",
 
