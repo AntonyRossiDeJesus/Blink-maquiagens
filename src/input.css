@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.flex-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hamburger.active span:first-child {
+  transform: rotate(45deg) translate(10px, 8px);
+}
+
+#hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger.active span:last-child {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+#popupMenu.active {
+  transform: translateY(0);
+}
+
+@layer components {
+  #whatsapp-btn {
+    opacity: 0.2;
+    transform: translateY(110%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+}
+
+#whatsapp-btn.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-primary {
+  color: #ecb531;
+  text-transform: uppercase;
+}
+
+.button-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ffe4a5, #ecb531);
+  border: none;
+  border-radius: 25px;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+  max-width: 400px;
+}
+
+.button-primary:hover {
+  background: linear-gradient(to right, #ecb531, #ffe4a5);
+}
+
+.button-secundary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #1da622, #bce2bd);
+  border: none;
+  border-radius: 25px;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+  max-width: 400px;
+}
+
+.button-secundary:hover {
+  background: linear-gradient(to right, #bce2bd, #1da622);
+}
+
+.item-acordeao {
+  margin: 1.2rem 0;
+  cursor: pointer;
+}
+
+.cabecalho-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+  min-height: 55px;
+  padding: 8px 16px;
+  border-top-left-radius: 20px; /* Arredonda o canto superior esquerdo */
+  background: linear-gradient(to right, #ecb531, #212121);
+}
+.img-seta {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.cabecalho-item--reverse {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+  min-height: 55px;
+  padding: 8px 16px;
+  border-bottom-left-radius: 20px; /* Arredonda o canto inferior esquerdo */
+  border-top-right-radius: 20px; /* Arredonda o canto inferior esquerdo */
+  background: linear-gradient(to left, #ecb531, #212121);
+}
+
+.img-seta {
+  text-align: center;
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.aberto .cabecalho-item {
+  background: linear-gradient(to right, #ecb531, #212121);
+  color: white;
+}
+
+.aberto .cabecalho-item--reverse {
+  background: linear-gradient(to left, #ecb531, #212121);
+  color: white;
+}
+
+.corpo-item {
+  display: none;
+  padding: 16px 16px;
+  color: white;
+  background: linear-gradient(to right, #ecb531, #212121);
+  border-bottom-left-radius: 20px; /* Arredonda o canto inferior esquerdo */
+}
+
+.corpo-item--reverse {
+  display: none;
+  padding: 16px 16px;
+  color: white;
+  border-bottom-right-radius: 20px; /* Arredonda o canto inferior esquerdo */
+  background: linear-gradient(to left, #ecb531, #212121);
+}
+
+.aberto .corpo-item {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ebcf7f, #c39157);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #ebcf7f, #c39157);
+}
+
+scrollbar-width: thin;
+scrollbar-color: #ebcf7f #000;

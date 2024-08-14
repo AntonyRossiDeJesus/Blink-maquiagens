@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink</title>
+
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="w-full flex justify-center h-[70px] bg-black relative">
+      <div class="container flex items-center justify-end px-10">
+       
+        <ul class="items-center gap-8 uppercase italic font-extralight lg:text-lg text-[#ecb531] transition-all hidden md:flex">
+          <li class="hover:text-[#C39157]"><a href="">Saiba mais</a></li>
+          <li class="hover:text-[#C39157]"><a href="">Benefícios</a></li>
+          <li class="hover:text-[#C39157]"><a href="">Plataforma</a></li>
+          <li class="hover:text-[#C39157]"><a href="">Garantia</a></li>
+          <li class="hover:text-[#C39157]"><a href="">Bônus</a></li>
+        </ul>
+    
+        
+        <div id="hamburger" class="md:hidden flex flex-col justify-between h-[24px] cursor-pointer z-50">
+          <span class="h-[3px] w-[30px] bg-[#ecb531] transition-transform duration-300"></span>
+          <span class="h-[3px] w-[30px] bg-[#ecb531] transition-opacity duration-300"></span>
+          <span class="h-[3px] w-[30px] bg-[#ecb531] transition-transform duration-300"></span>
+        </div>
+      </div>
+    
+      
+      <div id="popupMenu" class="fixed inset-0 bg-black flex flex-col justify-center items-center transition-all duration-500 transform translate-y-full z-40">
+        <ul class="text-center text-[#ecb531] text-2xl space-y-6 uppercase italic font-extralight">
+          <li><a href="">Saiba mais</a></li>
+          <li><a href="">Benefícios</a></li>
+          <li><a href="">Plataforma</a></li>
+          <li><a href="">Garantia</a></li>
+          <li><a href="">Bônus</a></li>
+        </ul>
+      </div>
+    </header>
+    
+    <main>
+      <section
+        class="flex-primary bg-custom-bg-hero-mobile md:bg-custom-bg-hero-descktop bg-cover bg-center h-[1978px] 3xl:h-[1810px] w-full z-30 relative overflow-y-hidden"
+      >
+        <div class="container relative flex flex-col md:flex-row gap-8 p-10">
+          <div
+            class="w-full md:w-[60%] lg:max-w-[570px] z-40 h-[800px] -mt-[950px] md:-mt-[750px] flex flex-col gap-2"
+          >
+            <img
+              class="w-[140px] h-[90px]"
+              src="/src/assets/LOGO.svg"
+              alt="Logo da Blink cursos de maquiagem"
+            />
+            <h1 class="text-4xl font-bold">
+              VOCÊ PODE TRANSFORMAR A SUA PAIXÃO POR MAQUIAGEM EM UMA CARREIRA
+              DE SUCESSO.
+            </h1>
+            <h2 class="text-zinc-400 italic">
+              Mesmo que você esteja começando do zero!
+            </h2>
+            <p>
+              Entre para a escola de maquiagem mais completa do Brasil e se
+              torne uma maquiadora profissional.
+            </p>
+
+            <button class="button-primary">QUERO SABER MAIS!</button>
+          </div>
+          <!-- <div
+            class="w-full md:w-[50%] h-[540px] md:h-[780px] -mt-[650px] ml-[100px] md:-mt-[871px] z-10 bg-custom-bg-hero-modelo bg-cover bg-left"
+          ></div> -->
+        </div>
+      </section>
+
+      <section
+        class="flex-primary relative bg-custom-bg-two-mobile md:bg-custom-bg-two-descktop bg-cover bg-left h-[550px] w-full z-50 -mt-[1080px]"
+      >
+        <div
+          class="w-full max-w-[1050px] flex flex-col items-center gap-4 overflow-x-hidden"
+        >
+          <h1
+            class="text-primary text-3xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px] max-w-[538px] text-center"
+          >
+            A NOSSA ACADEMY É IDEAL PARA VOCÊ QUE:
+          </h1>
+          <div class="relative overflow-hidden px-4">
+            <div
+              class="flex transition-transform duration-500 ease-in-out m-4 gap-4"
+              id="carousel"
+            >
+              <div class="w-full flex-shrink-0 md:w-1/2 lg:w-1/3">
+                <div
+                  class="p-4 bg-custom-bg-container-two rounded-3xl shadow-lg text-center lg:text-start"
+                >
+                  <h2 class="text-7xl font-bold">1</h2>
+                  <p class="font-bold lg:text-xl">
+                    Ama se cuidar, mas a make nunca fica do jeito que você quer,
+                    precisando gastar tempo e dinheiro em salões de beleza.
+                  </p>
+                </div>
+              </div>
+              <div class="w-full flex-shrink-0 md:w-1/2 lg:w-1/3">
+                <div
+                  class="p-4 bg-custom-bg-container-two rounded-3xl shadow-lg text-center lg:text-start"
+                >
+                  <h2 class="text-7xl font-bold">2</h2>
+                  <p class="font-bold lg:text-xl">
+                    Ama se cuidar, mas a make nunca fica do jeito que você quer,
+                    precisando gastar tempo e dinheiro em salões de beleza.
+                  </p>
+                </div>
+              </div>
+              <div class="w-full flex-shrink-0 md:w-1/2 lg:w-1/3">
+                <div
+                  class="p-4 bg-custom-bg-container-two rounded-3xl shadow-lg text-center lg:text-start"
+                >
+                  <h2 class="text-7xl font-bold">3</h2>
+                  <p class="font-bold lg:text-xl">
+                    Ama se cuidar, mas a make nunca fica do jeito que você quer,
+                    precisando gastar tempo e dinheiro em salões de beleza.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              id="prevBtn"
+              class="absolute flex left-12 top-14 transform -translate-y-1/2 text-white px-4 py-2 lg:hidden"
+            >
+              <i
+                class="bg-custom-icon-seta-esquerda bg-cover bg-center w-8 h-8"
+              ></i>
+            </button>
+            <button
+              id="nextBtn"
+              class="absolute flex right-12 md:-right-4 top-14 transform -translate-y-1/2 text-white px-4 py-2 lg:hidden"
+            >
+              <i
+                class="bg-custom-icon-seta-direita bg-cover bg-center w-8 h-8"
+              ></i>
+            </button>
+          </div>
+
+          <button class="button-primary">ESSA ESCOLA É FEITA PARA MIM!</button>
+        </div>
+      </section>
+
+      <section
+        class="flex-primary relative bg-custom-bg-tree-mobile md:bg-custom-bg-tree-descktop bg-cover bg-center h-[840px] w-full z-20 py-10"
+      >
+        <div class="container">
+          <div
+            class="w-full md:max-w-[500px] lg:max-w-[650px] flex flex-col items-center lg:justify-start lg:items-start gap-4"
+          >
+            <h1
+              class="min-w-[310px] text-center sm:text-start text-primary text-3xl sm:text-4xl lg:text-5xl"
+            >
+              SAIBA MAIS SOBRE AS<br />PROFISSIONAIS QUE<br />VÃO TE ACOMPANHAR:
+            </h1>
+            <h2 class="text-base lg:text-lg px-10 lg:px-0">
+              Somos Especialistas e, 15 anos atrás, Tinhamos o mesmo sonho que
+              você tem hoje: ser uma maquiadora profissional.
+            </h2>
+            <p class="text-base lg:text-lg px-10 lg:px-0">
+              A nossa trajetória não foi nada fácil, afinal nós vinhemos de
+              famílias humilde e não tinhamos condições de comprar as
+              ferramentas necessárias para nos profissionalizar. Como mulheres,
+              apaixonadas pelo o que fazemos, criamos essa escola que já
+              transformou a vida de mais de 200 mil mulheres com o nosso método
+              de ensino.
+            </p>
+            <p class="text-base lg:text-lg px-10 lg:px-0">
+              Por isso, eu quero segurar a sua mão e te guiar pelo caminho certo
+              para uma carreira de sucesso como maquiadora profissional!
+            </p>
+            <button class="button-primary px-10">
+              ENTRAR PARA NOSSA ACADEMY
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex justify-center lg:justify-end items-end lg:items-center bg-custom-bg-for-mobile lg:bg-custom-bg-for-descktop bg-cover bg-center h-[940px] w-full"
+      >
+        <div
+          class="container flex flex-col gap-4 pt-40 lg:max-w-[550px] xl:max-w-[750px] 2xl:max-w-[850px] lg:pt-10 p-10"
+        >
+          <h1
+            class="text-primary text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px] max-w-[538px]"
+          >
+            CONFIRA OS BENEFÍCIOS QUE VOCÊ PODE TER COM A NOSSA ESCOLA:
+          </h1>
+          <ul class="text-base md:text-lg xl:text-xl">
+            <li class="flex items-center justify-start gap-2">
+              <i
+                class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+              ></i
+              >Acesso à mais de 10 cursos pelo preço de 1
+            </li>
+            <li class="flex items-center justify-start gap-2">
+              <i
+                class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+              ></i
+              >Cancelamento da assinatura a qualquer momento
+            </li>
+            <li class="flex items-center justify-start gap-2">
+              <i
+                class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+              ></i
+              >Se maquiar em casa como uma profissional de salão de beleza
+            </li>
+            <li class="flex items-center justify-start gap-2">
+              <i
+                class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+              ></i
+              >Módulos gradativos, desde o beabá da maquiagem até o avançado
+            </li>
+            <li class="flex items-center justify-start gap-2">
+              <i
+                class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+              ></i
+              >Técnicas inovadoras para você se aperfeiçoar ainda mais
+            </li>
+            <li class="flex items-center justify-start gap-2">
+              <i
+                class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+              ></i
+              >Estratégias exclusivas para se destacar no mercado de trabalho
+            </li>
+          </ul>
+          <p class="text-2xl font-bold xl:text-3xl xl:max-w-[640px]">
+            E muito mais benefícios que só quem é membro da escola sabe…
+          </p>
+          <button class="button-primary">QUERO TODOS OS BENEFÍCIOS</button>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col justify-start lg:justify-center items-center lg:items-start xl:items-center bg-custom-bg-five-mobile lg:bg-custom-bg-five-descktop bg-cover bg-center h-[1169px] w-full p-10"
+      >
+        <div class="container flex justify-center flex-col">
+          <div
+            class="flex flex-col gap-4 pt-10 lg:max-w-[550px] xl:max-w-[750px] 2xl:max-w-[850px] lg:pt-10 pb-4"
+          >
+            <h1
+              class="text-primary text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px] max-w-[538px] leading-10"
+            >
+              TUDO O QUE VOCÊ PRECISA EM UMA ÚNICA PLATAFORMA!
+            </h1>
+            <p class="text-lg md:text-xl xl:text-2xl max-w-[500px]">
+              Veja tudo o que preparamos para você se tornar uma maquiadora
+              profissional:
+            </p>
+            <ul class="text-base md:text-lg xl:text-xl">
+              <li class="flex items-center justify-start gap-2">
+                <i
+                  class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+                ></i
+                >Maquiagem na Web 1.0 (iniciante)
+              </li>
+              <li class="flex items-center justify-start gap-2">
+                <i
+                  class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+                ></i
+                >Maquiagem na Web 2.0 (intermediário)
+              </li>
+              <li class="flex items-center justify-start gap-2">
+                <i
+                  class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+                ></i
+                >Maquiagem Artística
+              </li>
+              <li class="flex items-center justify-start gap-2">
+                <i
+                  class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+                ></i
+                >Workshop Maquiadora Expert
+              </li>
+              <li class="flex items-center justify-start gap-2">
+                <i
+                  class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+                ></i
+                >Maquiagem para Noivas
+              </li>
+              <li class="flex items-center justify-start gap-2">
+                <i
+                  class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+                ></i
+                >Automaquiagem (iniciante)
+              </li>
+              <li class="flex items-center justify-start gap-2">
+                <i
+                  class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+                ></i
+                >Automaquiagem (avançado)
+              </li>
+              <li class="flex items-center justify-start gap-2">
+                <i
+                  class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+                ></i
+                >Maquiagem Profissional para Modelos (iniciante)
+              </li>
+              <li class="flex items-center justify-start gap-2">
+                <i
+                  class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+                ></i
+                >Maquiagem Profissional para Modelos (avançado)
+              </li>
+              <li class="flex items-center justify-start gap-2">
+                <i
+                  class="bg-custom-icon-seta min-w-4 min-h-4 bg-cover bg-center"
+                ></i
+                >Novos Conteúdos todos os meses (ao vivo e gravado)
+              </li>
+            </ul>
+            <button class="button-primary">QUERO TODOS OS CURSOS</button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex justify-center md:justify-start items-start md:items-center bg-custom-bg-six-mobile md:bg-custom-bg-six-descktop bg-cover bg-bottom h-[750px] w-full py-20 px-10"
+      >
+        <div class="container flex justify-center">
+          <div
+            class="flex justify-center items-center md:items-start flex-col gap-4 max-w-[400px] lg:max-w-[550px]"
+          >
+            <h1
+              class="text-primary text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px] max-w-[538px] text-center md:text-start"
+            >
+              GARANTIA DE 7 DIAS <br />
+              SÓ PAGUE SE GOSTAR!
+            </h1>
+            <p class="text-base md:text-lg xl:text-xl">
+              Experimente sem riscos com nossa garantia de 7 dias! Na Nossa
+              Academy, oferecemos a oportunidade de testar nossa plataforma por
+              uma semana. Comece sua jornada de aprendizado hoje!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex-primary bg-custom-bg-seven-mobile lg:bg-custom-bg-seven-descktop bg-cover bg-center h-[1000px] md:h-[600px] w-full"
+      >
+        <div class="container max-w-[1200px] flex flex-col gap-4 md:gap-8">
+          <h1
+            class="text-primary text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px] max-w- text-center"
+          >
+            GANHE R$697 EM BÔNUS EXCLUSIVOS!
+          </h1>
+
+          <div class="p-10 md:p-4 flex flex-col md:flex-row gap-4">
+            <div
+              class="w-[240px] md:w-1/3 flex flex-col gap-2 bg-bg-degrade-button-hero bg-cover bg-center rounded-xl"
+            >
+              <div
+                class="max-w-[240px] md:max-w-full lg:max-w-full flex flex-col justify-center gap-2 m-[4px] bg-black rounded-xl p-4"
+              >
+                <img
+                  class="max-w-20 max-h-16 -ml-2"
+                  src="/src/assets/LOGO-CHECK.svg"
+                  alt="icone de um simbolo de check positivo"
+                />
+                <div class="flex flex-col gap-[2px]">
+                  <h2 class="text-primary text-2xl font-bold">Bônus #01:</h2>
+                  <p class="font-bold lg:text-xl">Conteúdo Nutricional</p>
+                  <p class="text-red-500 text-lg md:text-xl">R$199</p>
+                  <p
+                    class="text-green-500 text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+                  >
+                    Grátis
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-full flex items-end justify-end lg:justify-stretch md:w-1/3"
+            >
+              <div
+                class="w-[240px] md:w-full flex flex-col gap-2 bg-bg-degrade-button-hero bg-cover bg-center rounded-xl"
+              >
+                <div
+                  class="max-w-[240px] md:max-w-full flex flex-col justify-center gap-2 m-[4px] bg-black rounded-xl p-4"
+                >
+                  <img
+                    class="max-w-20 max-h-16 -ml-2"
+                    src="/src/assets/LOGO-CHECK.svg"
+                    alt="icone de um simbolo de check positivo"
+                  />
+                  <div class="flex flex-col gap-[2px]">
+                    <h2 class="text-primary text-2xl font-bold">Bônus #02:</h2>
+                    <p class="font-bold lg:text-xl">Aulas sobre Redes Sociais</p>
+                    <p class="text-red-500 text-lg md:text-xl">R$219</p>
+                    <p class="text-green-500 text-xl md:text-2xl lg:text-3xl xl:text-4xl"">Grátis</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-[240px] md:w-1/3 flex flex-col gap-2 bg-bg-degrade-button-hero bg-cover bg-center rounded-xl"
+            >
+              <div
+                class="max-w-[240px] md:max-w-full lg:max-w-full flex flex-col justify-center gap-2 m-[4px] bg-black rounded-xl p-4"
+              >
+                <img
+                  class="max-w-20 max-h-16 -ml-2"
+                  src="/src/assets/LOGO-CHECK.svg"
+                  alt="icone de um simbolo de check positivo"
+                />
+                <div class="flex flex-col gap-[2px]">
+                  <h2 class="text-primary text-2xl font-bold">Bônus #03:</h2>
+                  <p class="font-bold lg:text-xl">Curso de Fotografia</p>
+                  <p class="text-red-500 text-lg md:text-xl">R$279</p>
+                  <p class="text-green-500 text-xl md:text-2xl lg:text-3xl xl:text-4xl"">Grátis</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex-primary bg-custom-bg-eight-mobile lg:bg-custom-bg-eight-descktop bg-cover bg-center h-[950px] md:h-[710px] w-full py-10"
+      >
+        <div class="container max-w-[800px] p-10 flex flex-col gap-6">
+          <h1
+            class="text-primary text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px] max-w- text-center"
+          >
+            AGORA, VOCÊ ESTÁ DIANTE DE DOIS CAMINHOS…
+          </h1>
+          <p class="text-center text-base md:text-lg lg:text-xl xl:text-2xl">
+            Somente um deles te levará ao sucesso como maquiadora profissional!
+          </p>
+          <div class="flex justify-end items-end pb-4">
+            <div
+              class="font-bold bg-custom-bg-degrade-sec-eigth-black bg-cover bg-center w-[70%] lg:max-w-[500px] rounded-2xl p-4"
+            >
+              <h2 class="text-3xl pb-1">1º Caminho:</h2>
+              <p>
+                Gastar rios de dinheiro com cursos que te ensinam a maquiar, mas
+                que não te mostram como vender os seus serviços.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="font-bold bg-custom-bg-degrade-sec-eigth-yellow bg-cover bg-center w-[70%] rounded-2xl p-4"
+            >
+              <h2 class="text-3xl pb-1">2º Caminho:</h2>
+              <p>
+                Assinar uma única plataforma, se tornar uma maquiadora
+                profissional e aprender a vender os seus serviços de forma
+                lucrativa.
+              </p>
+            </div>
+          </div>
+
+          <p class="text-center text-base md:text-lg lg:text-xl xl:text-2xl">
+            Se você escolheu seguir o 2º Caminho, continue aqui comigo! Você
+            está a apenas 1 passo de ter uma carreira de sucesso…
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="flex items-end justify-center md:justify-end lg:justify-center bg-custom-bg-nine-mobile md:bg-custom-bg-nine-descktop bg-cover bg-center h-[1100px] md:h-[835px] w-full pb-14"
+      >
+        <div class="w-[1200px] flex justify-end">
+          <div class="container p-10 max-w-[600px]">
+            <div class="bg-black rounded-3xl p-4 flex flex-col gap-2">
+              <h1
+                class="text-primary text-2xl font-bold md:text-3xl lg-text-4xl xl:text-5xl"
+              >
+                VOCÊ CHEGOU<br />
+                AO SEU DESTINO!
+              </h1>
+              <p>
+                Dê o último passo rumo ao sucesso e se torne uma maquiadora
+                profissional:
+              </p>
+              <h2 class="text-2xl">NOSSA ACADEMY</h2>
+              <p>Assinatura mensal:</p>
+              <p class="text-2xl text-[#FF7676]">DE: R$197,90 /mês</p>
+              <p class="text-3xl">POR APENAS:</p>
+              <p class="text-primary text-4xl font-bold lg:text-6xl">
+                R$ 49,90/mês
+              </p>
+              <button class="button-primary">ENTRAR PARA NOSSA ACADEMY</button>
+              <img
+                src="/src/assets/Logo-pagamento-com-cartoes.webp.png"
+                alt="Logo bandeiras pagamento com cartoes visa, mastercard e etc.."
+              />
+              <p>
+                Após realizar o seu pedido, você receberá um e-mail contendo
+                todos os dados e informações para acessar os conteúdos
+                exclusivos da plataforma.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-full flex flex-col justify-center items-center p-2 gap-4 py-20 bg-[#212121]"
+      >
+        <div class="flex flex-col items-center gap-4">
+          <h1
+            class="text-primary text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px] max-w-[700px] text-center italic"
+          >
+            FICOU COM ALGUMA DÚVIDA SOBRE A NOSSA ESCOLA?
+          </h1>
+          <p>
+            Veja as principais dúvidas das nossas alunas sobre a Blink Academy:
+          </p>
+        </div>
+        <div class="container w-full acordeao md:w-[700px]">
+          <div class="item-acordeao">
+            <div class="cabecalho-item p-2">
+              <img
+                class="img-seta"
+                src="src/assets/seta-para-baixo.png"
+                alt="Seta para baixo"
+                style="max-width: 16px; max-height: 16px"
+              />
+              <span class="uppercase">Como funciona o atendimento?</span>
+            </div>
+            <div class="corpo-item">
+              Após recebermos sua solicitação, nossa equipe entrará em contato
+              para entender melhor suas necessidades e agendar uma consulta
+              inicial.
+            </div>
+          </div>
+          <div class="item-acordeao">
+            <div class="cabecalho-item--reverse p-2">
+              <span class="uppercase">Como funciona a consulta?</span>
+              <img
+                class="img-seta"
+                src="src/assets/seta-para-baixo.png"
+                alt="Seta para baixo"
+                style="max-width: 16px; max-height: 16px"
+              />
+            </div>
+            <div class="corpo-item corpo-item--reverse">
+              Você pode agendar uma consulta pelo nosso site, telefone ou
+              e-mail. Oferecemos opções de consulta presencial em nosso
+              escritório ou por videoconferência, conforme sua preferência e
+              conveniência.
+            </div>
+          </div>
+          <div class="item-acordeao">
+            <div class="cabecalho-item p-2">
+              <img
+                class="img-seta"
+                src="src/assets/seta-para-baixo.png"
+                alt="Seta para baixo"
+                style="max-width: 16px; max-height: 16px"
+              />
+              <span class="uppercase">Quanto custam os horários?</span>
+            </div>
+            <div class="corpo-item">
+              Para casos que exigem trabalho contínuo, cobramos um valor por
+              hora de atendimento. O valor exato é discutido e acordado antes do
+              início dos serviços, com base na complexidade e na estimativa de
+              tempo necessário.
+            </div>
+          </div>
+          <div class="item-acordeao">
+            <div class="cabecalho-item--reverse p-2">
+              <span class="uppercase">Quais as formas de pagamento?</span>
+              <img
+                class="img-seta"
+                src="src/assets/seta-para-baixo.png"
+                alt="Seta para baixo"
+                style="max-width: 16px; max-height: 16px"
+              />
+            </div>
+            <div class="corpo-item corpo-item--reverse">
+              Você pode realizar o pagamento por meio de transferência bancária
+              para a conta especificada na fatura. Essa é uma opção segura e
+              rápida. Disponibilizamos a opção de pagamento por boleto bancário.
+              Após a emissão do boleto, você poderá pagá-lo em qualquer banco,
+              casa lotérica ou pelo Internet Banking.
+            </div>
+          </div>
+          <div class="item-acordeao">
+            <div class="cabecalho-item p-2">
+              <img
+                class="img-seta"
+                src="src/assets/seta-para-baixo.png"
+                alt="Seta para baixo"
+                style="max-width: 16px; max-height: 16px"
+              />
+              <span>POSSO PARCELAR OS HONORÁRIOS?</span>
+            </div>
+            <div class="corpo-item">
+              Aceitamos pagamentos com cartão de crédito, permitindo o
+              parcelamento do valor em até 12 vezes sem juros. Para essa opção,
+              entre em contato conosco para fornecer os detalhes do cartão.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a
+        id="whatsapp-btn"
+        href="https://api.whatsapp.com/send?phone=5548988046418"
+        target="_blank"
+        class="fixed bottom-6 right-6 p-4 flex"
+      >
+        <i
+          class="bg-custom-icon-whatssap bg-cover bg-center w-16 h-16"
+        ></i>
+      </a>
+    </main>
+
+    <footer
+      class="bg-custom-bg-footer-descktop bg-cover bg-center h-[360px] w-full flex flex-col justify-between items-center p-3"
+    >
+      <div
+        class="container flex flex-col justify-center items-center pt-20 gap-32"
+      >
+        <div class="flex flex-col gap-2 w-[75%] lg:w-[35%] -ml-[98px]">
+          <h2 class="text-primary text-2xl">
+            FICOU COM ALGUMA DÚVIDA SOBRE A NOSSA ESCOLA?
+          </h2>
+          <button class="button-primary">
+            SEM DÚVIDAS, VOU COMPRAR AGORA!
+          </button>
+          <button class="button-secundary">QUERO TIRAR A MINHA DÚVIDA</button>
+        </div>
+      </div>
+
+      <div>
+        <a href="#sessao-hero">
+          <button class="text-white flex gap-2 items-center justify-center">
+            <i
+              class="bg-custom-icon-seta-rodape bg-cover bg-center w-4 h-4 mt-1"
+            ></i
+            >VOLTAR AO TOPO
+          </button>
+        </a>
+      </div>
+    </footer>
+
+    <script src="/src/js/popup-menu.js"></script>
+    <script src="/src/js/timeout.js"></script>
+    <script src="/src/js/acordeao.js"></script>
+    <script src="/src/js/carousel-sec-two.js"></script>
+  </body>
+</html>
