@@ -9,15 +9,15 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <header class="w-full flex justify-center h-[70px] bg-black relative">
+    <header class="w-full flex justify-center h-[70px] bg-black relative " id="sessao-hero">
       <div class="container flex items-center justify-end px-10">
        
         <ul class="items-center gap-8 uppercase italic font-extralight lg:text-lg text-[#ecb531] transition-all hidden md:flex">
-          <li class="hover:text-[#C39157]"><a href="">Saiba mais</a></li>
-          <li class="hover:text-[#C39157]"><a href="">Benefícios</a></li>
-          <li class="hover:text-[#C39157]"><a href="">Plataforma</a></li>
-          <li class="hover:text-[#C39157]"><a href="">Garantia</a></li>
-          <li class="hover:text-[#C39157]"><a href="">Bônus</a></li>
+          <li class="hover:text-[#C39157]"><a href="#saibamais">Saiba mais</a></li>
+          <li class="hover:text-[#C39157]"><a href="#beneficios">Benefícios</a></li>
+          <li class="hover:text-[#C39157]"><a href="#plataforma">Plataforma</a></li>
+          <li class="hover:text-[#C39157]"><a href="#garantia">Garantia</a></li>
+          <li class="hover:text-[#C39157]"><a href="#bonus">Bônus</a></li>
         </ul>
     
         
@@ -31,11 +31,11 @@
       
       <div id="popupMenu" class="fixed inset-0 bg-black flex flex-col justify-center items-center transition-all duration-500 transform translate-y-full z-40">
         <ul class="text-center text-[#ecb531] text-2xl space-y-6 uppercase italic font-extralight">
-          <li><a href="">Saiba mais</a></li>
-          <li><a href="">Benefícios</a></li>
-          <li><a href="">Plataforma</a></li>
-          <li><a href="">Garantia</a></li>
-          <li><a href="">Bônus</a></li>
+          <li><a href="#saibamais">Saiba mais</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#plataforma">Plataforma</a></li>
+          <li><a href="#garantia">Garantia</a></li>
+          <li><a href="#bonus">Bônus</a></li>
         </ul>
       </div>
     </header>
@@ -67,9 +67,7 @@
 
             <button class="button-primary">QUERO SABER MAIS!</button>
           </div>
-          <!-- <div
-            class="w-full md:w-[50%] h-[540px] md:h-[780px] -mt-[650px] ml-[100px] md:-mt-[871px] z-10 bg-custom-bg-hero-modelo bg-cover bg-left"
-          ></div> -->
+         
         </div>
       </section>
 
@@ -134,7 +132,7 @@
             </button>
             <button
               id="nextBtn"
-              class="absolute flex right-12 md:-right-4 top-14 transform -translate-y-1/2 text-white px-4 py-2 lg:hidden"
+              class="absolute flex right-12 md:right-8 top-14 transform -translate-y-1/2 text-white px-4 py-2 lg:hidden"
             >
               <i
                 class="bg-custom-icon-seta-direita bg-cover bg-center w-8 h-8"
@@ -147,6 +145,7 @@
       </section>
 
       <section
+      id="saibamais"
         class="flex-primary relative bg-custom-bg-tree-mobile md:bg-custom-bg-tree-descktop bg-cover bg-center h-[840px] w-full z-20 py-10"
       >
         <div class="container">
@@ -182,6 +181,7 @@
       </section>
 
       <section
+      id="beneficios"
         class="flex justify-center lg:justify-end items-end lg:items-center bg-custom-bg-for-mobile lg:bg-custom-bg-for-descktop bg-cover bg-center h-[940px] w-full"
       >
         <div
@@ -220,6 +220,7 @@
       </section>
 
       <section
+      id="plataforma"
         class="flex flex-col justify-start lg:justify-center items-center lg:items-start xl:items-center bg-custom-bg-five-mobile lg:bg-custom-bg-five-descktop bg-cover bg-center h-[1169px] w-full p-10"
       >
         <div class="container flex justify-center flex-col">
@@ -273,6 +274,7 @@
       </section>
 
       <section
+      id="garantia"
         class="flex justify-center md:justify-start items-start md:items-center bg-custom-bg-six-mobile md:bg-custom-bg-six-descktop bg-cover bg-bottom h-[750px] w-full py-20 px-10"
       >
         <div class="container flex justify-center">
@@ -295,6 +297,7 @@
       </section>
 
       <section
+      id="bonus"
         class="flex-primary bg-custom-bg-seven-mobile lg:bg-custom-bg-seven-descktop bg-cover bg-center h-[1000px] md:h-[600px] w-full"
       >
         <div class="container max-w-[1200px] flex flex-col gap-4 md:gap-8">

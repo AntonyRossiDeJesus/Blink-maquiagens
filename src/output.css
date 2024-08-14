@@ -2192,10 +2192,6 @@ video {
   background-image: url('./assets/bg-two-mobile.webp');
 }
 
-.bg-custom-icon-seta {
-  background-image: url('assets/seta.svg');
-}
-
 .bg-custom-icon-seta-direita {
   background-image: url('./assets/seta-direita.svg');
 }
@@ -3298,6 +3294,14 @@ scrollbar-color: #ebcf7f #000;
 @media (min-width: 768px) {
   .md\:-right-4 {
     right: -1rem;
+  }
+
+  .md\:right-2 {
+    right: 0.5rem;
+  }
+
+  .md\:right-8 {
+    right: 2rem;
   }
 
   .md\:-mt-\[750px\] {
