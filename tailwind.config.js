@@ -33,6 +33,8 @@ module.exports = {
 
         "custom-icon-whatssap": "url('./assets/icone-whatszapp-amarelo.svg')",
 
+        "custom-icon-seta-rodape": "url('./assets/icone-seta-rodape.png')",
+
         "custom-bg-container-two":
           "linear-gradient(to left, #000 0%, #94711F 50%, #000 100%);",
         "bg-degrade-button-hero": "linear-gradient(to left, #EBCF7F, #C39157)",

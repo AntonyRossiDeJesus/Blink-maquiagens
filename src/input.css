@@ -50,6 +50,10 @@ body.no-scroll {
   text-transform: uppercase;
 }
 
+.border-container {
+  background: linear-gradient(to top, #000 0%, #ecb531 50%, #000 100%);
+}
+
 .button-primary {
   display: flex;
   justify-content: center;

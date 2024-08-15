@@ -7,22 +7,34 @@ const items = carousel.children.length;
 const itemWidth = carousel.children[0].getBoundingClientRect().width;
 const gap = 16;
 const transitionDuration = 500;
-const intervalTime = 6000;
+const intervalTime = 20000;
 let autoScroll;
 
 function updateCarousel() {
   const offset = -(currentIndex * (itemWidth + gap));
   carousel.style.transform = `translateX(${offset}px)`;
+
+  if (currentIndex === 0) {
+    prevBtn.classList.add("disabled");
+    prevBtn.disabled = true;
+  } else {
+    prevBtn.classList.remove("disabled");
+    prevBtn.disabled = false;
+  }
 }
 
 function goToNext() {
-  currentIndex = (currentIndex + 1) % items;
+  if (currentIndex < 2) {
+    currentIndex++;
+  }
   updateCarousel();
 }
 
 function goToPrev() {
-  currentIndex = (currentIndex - 1 + items) % items;
-  updateCarousel();
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+  }
 }
 
 nextBtn.addEventListener("click", goToNext);
