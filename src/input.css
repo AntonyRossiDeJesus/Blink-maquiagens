@@ -2,13 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "BebasNeue";
+  src: url("/src/assets/fonts/BebasNeue-Regular.woff") format("woff2"),
+    url("/src/assets/fonts/BebasNeue-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 
+@font-face {
+  font-family: "BebasNeue";
+  src: url("/src/assets/fonts/minha-fonte-bold.woff2") format("woff2"),
+    url("/src/assets/fonts/minha-fonte-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+} */
+
 body {
   color: white;
   background: black;
 }
 
 h1 {
-  font-family: "Bebas Neue", sans-serif;
+  /* font-family: "Bebas Neue", sans-serif; */
+  font-family: "BebasNeue", Arial, sans-serif;
 }
 
 body.no-scroll {
@@ -53,12 +70,25 @@ body.no-scroll {
   }
 }
 
+@keyframes seta-rodape-animation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 @layer components {
   #whatsapp-btn {
     opacity: 0.2;
     transform: translateY(110%);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
+}
+.seta-rodape-animation {
+  animation: seta-rodape-animation 1.5s infinite ease-in-out !important;
 }
 
 #whatsapp-btn.show {
@@ -92,14 +122,6 @@ body.no-scroll {
   transition: background 0.3s ease;
   max-width: 400px;
 }
-
-/* @media (min-width: 1024px) {
-  .button-primary {
-    font-size: 1.5rem;
-    padding: 12px 20px;
-    max-width: 450px;
-  }
-} */
 
 .button-primary:hover {
   background: linear-gradient(to right, #ecb531, #ffe4a5);

@@ -8,16 +8,11 @@
     <link href="src/output.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
-
+    <link rel="preload" fetchpriority="high" as="image" href="/src/assets/bg-hero-descktop2.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="/src/assets/bg-hero-mobile2.webp" type="image/webp">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aprenda técnicas avançadas de maquiagem com nosso curso especializado e transforme sua paixão em uma carreira.">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="w-full flex justify-center h-[70px] bg-black relative " id="sessao-hero">
@@ -622,14 +617,19 @@
         </div>
       </div>
 
-      <div>
-        <a href="#sessao-hero">
-          <button class="text-white flex gap-2 items-center justify-center p-6">
-            <i
-              class="bg-custom-icon-seta-rodape bg-cover bg-center w-7 h-5 mt-1 "
-            ></i
-            >VOLTAR AO TOPO
-          </button>
+      <div class="w-full flex flex-col items-center">
+        <div class="rounded-full w-14 h-14 border p-1 flex justify-center items-center">
+          <img
+          
+          class="w-9 h-auto seta-rodape-animation"
+          src="src/assets/icone-seta-rodape.png"
+          alt="icone de seta indicando para cima esse icone retorna para secao de inicial"
+          />
+          
+        </div>
+        <a href="#sessao-hero" 
+        class= " text-white -mt-5 bg-black">
+            VOLTAR AO TOPO
         </a>
       </div>
     </footer>
