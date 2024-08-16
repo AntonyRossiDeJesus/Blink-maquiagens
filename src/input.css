@@ -104,14 +104,21 @@ body.no-scroll {
   border: none;
   border-radius: 25px;
   color: #000;
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 10px 15px;
+  font-size: 0.8rem;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease;
   max-width: 400px;
+}
+
+@media (min-width: 1024px) {
+  .button-primary {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
 }
 
 .button-primary:hover {
@@ -126,14 +133,21 @@ body.no-scroll {
   border: none;
   border-radius: 25px;
   color: #000;
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 10px 15px;
+  font-size: 0.8rem;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease;
   max-width: 400px;
+}
+
+@media (min-width: 1024px) {
+  .button-secundary {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
 }
 
 .button-secundary:hover {
