@@ -9,14 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/* 
-@font-face {
-  font-family: "BebasNeue";
-  src: url("/src/assets/fonts/minha-fonte-bold.woff2") format("woff2"),
-    url("/src/assets/fonts/minha-fonte-bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-} */
 
 body {
   color: white;
@@ -24,7 +16,6 @@ body {
 }
 
 h1 {
-  /* font-family: "Bebas Neue", sans-serif; */
   font-family: "BebasNeue", Arial, sans-serif;
 }
 
