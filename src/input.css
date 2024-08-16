@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "BebasNeue";
-  src: url("src/assets/fonts/BebasNeue-Regular.woff") format("woff2"),
+  src: url("src/assets/fonts/BebasNeue-Regular.woff") format("woff"),
     url("src/assets/fonts/BebasNeue-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
