@@ -7,6 +7,9 @@
 
     <link href="src/output.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <link rel="preload" href="src/assets/bg-hero-descktop2.webp" as="image">
+    <link rel="preload" href="src/assets/bg-hero-mobile2.webp" as="image">
   </head>
   <body>
     <header class="w-full flex justify-center h-[70px] bg-black relative " id="sessao-hero">
@@ -42,6 +45,7 @@
     
     <main>
       <section
+    
         class="flex-primary bg-custom-bg-hero-mobile md:bg-custom-bg-hero-descktop bg-cover bg-center h-[1978px] 3xl:h-[1810px] w-full z-30 relative overflow-y-hidden"
       >
         <div class="container relative flex flex-col md:flex-row gap-8 p-10">
@@ -65,7 +69,7 @@
               torne uma maquiadora profissional.
             </p>
 
-            <button class="button-primary">QUERO SABER MAIS!</button>
+            <a class="button-primary" href="https://api.whatsapp.com/send?phone=5548988046418" target="_blank"><button>QUERO SABER MAIS!</button></a>
           </div>
          
         </div>
@@ -191,7 +195,7 @@
 
       <section
       id="beneficios"
-        class="flex justify-center lg:justify-end items-end lg:items-center bg-custom-bg-for-mobile lg:bg-custom-bg-for-descktop bg-cover bg-center h-[1050px] sm:h-[850px] lg:h-[640px] w-full px-10"
+        class="lazy-bg section-beneficios flex justify-center lg:justify-end items-end lg:items-center bg-cover bg-top h-[1050px] sm:h-[985px] md:h-[1230px] lg:h-[640px] w-full px-10"
       >
         <div
           class="container flex flex-col gap-4 pt-10 lg:max-w-[550px] xl:max-w-[750px] 2xl:max-w-[850px] lg:pt-10 pb-10"
@@ -230,7 +234,7 @@
 
       <section
       id="plataforma"
-        class="flex flex-col justify-start lg:justify-center items-center lg:items-start xl:items-center bg-custom-bg-five-mobile md:bg-custom-bg-five-descktop bg-cover bg-center h-[1169px] w-full p-10 md:h-[740px]"
+        class="lazy-bg section-plataforma flex flex-col justify-start lg:justify-center items-center lg:items-start xl:items-center bg-cover bg-center h-[1169px] w-full p-10 md:h-[740px]"
       >
         <div class="container flex justify-center flex-col">
           <div
@@ -433,7 +437,8 @@
       </section>
 
       <section
-        class="flex items-end justify-center md:justify-end lg:justify-center bg-custom-bg-nine-mobile md:bg-custom-bg-nine-descktop bg-cover bg-center h-[1100px] md:h-[835px] w-full pb-14"
+      
+        class="lazy-bg section-destino flex items-end justify-center md:justify-end lg:justify-center bg-cover bg-center h-[1100px] md:h-[835px] w-full pb-14"
       >
         <div class="w-[1200px] flex justify-end">
           <div class="container p-10 max-w-[600px]">
@@ -457,6 +462,7 @@
               </p>
               <button class="button-primary">ENTRAR PARA NOSSA ACADEMY</button>
               <img
+                loading="lazy"
                 src="src/assets/Logo-pagamento-com-cartoes.webp.png"
                 alt="Logo bandeiras pagamento com cartoes visa, mastercard e etc.."
               />
@@ -575,7 +581,7 @@
         id="whatsapp-btn"
         href="https://api.whatsapp.com/send?phone=5548988046418"
         target="_blank"
-        class="fixed bottom-6 right-6 p-4 flex"
+        class="fixed bottom-6 right-6 p-4 flex z-50"
       >
         <i
           class="bg-custom-icon-whatssap bg-cover bg-center w-16 h-16"
@@ -616,5 +622,6 @@
     <script src="src/js/timeout.js"></script>
     <script src="src/js/acordeao.js"></script>
     <script src="src/js/carousel-sec-two.js"></script>
+    <script src="src/js/lazyLoad.js"></script>
   </body>
 </html>
