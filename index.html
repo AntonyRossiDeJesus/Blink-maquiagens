@@ -8,14 +8,26 @@
     <link href="src/output.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
-    <link rel="preload" href="src/assets/bg-hero-descktop2.webp" as="image">
-    <link rel="preload" href="src/assets/bg-hero-mobile2.webp" as="image">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda técnicas avançadas de maquiagem com nosso curso especializado e transforme sua paixão em uma carreira.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="w-full flex justify-center h-[70px] bg-black relative " id="sessao-hero">
       <div class="container flex items-center justify-end px-10">
        
-        <ul class="items-center gap-8 uppercase italic font-extralight lg:text-lg text-[#ecb531] transition-all hidden md:flex">
+        <ul class="list-header items-center gap-8 uppercase font-extralight text-2xl text-[#ecb531] transition-all hidden md:flex">
           <li class="hover:text-[#C39157]"><a href="#saibamais">Saiba mais</a></li>
           <li class="hover:text-[#C39157]"><a href="#beneficios">Benefícios</a></li>
           <li class="hover:text-[#C39157]"><a href="#plataforma">Plataforma</a></li>
@@ -33,7 +45,7 @@
     
       
       <div id="popupMenu" class="fixed inset-0 bg-black flex flex-col justify-center items-center transition-all duration-500 transform translate-y-full z-40">
-        <ul class="text-center text-[#ecb531] text-2xl space-y-6 uppercase italic font-extralight">
+        <ul class="list-header text-center text-[#ecb531] text-2xl space-y-6 uppercase font-extralight">
           <li><a href="#saibamais">Saiba mais</a></li>
           <li><a href="#beneficios">Benefícios</a></li>
           <li><a href="#plataforma">Plataforma</a></li>
@@ -45,7 +57,7 @@
     
     <main>
       <section
-    
+       
         class="flex-primary bg-custom-bg-hero-mobile md:bg-custom-bg-hero-descktop bg-cover bg-center h-[1978px] 3xl:h-[1810px] w-full z-30 relative overflow-y-hidden"
       >
         <div class="container relative flex flex-col md:flex-row gap-8 p-10">
@@ -57,19 +69,19 @@
               src="./src/assets/LOGO.svg"
               alt="Logo da Blink cursos de maquiagem"
             />
-            <h1 class="text-[30px] font-bold">
+            <h1 class="text-[36px] md:text-[42px] lg:text-[48px] font-bold">
               VOCÊ PODE TRANSFORMAR A SUA PAIXÃO POR MAQUIAGEM EM UMA CARREIRA
-              DE SUCESSO.
+              DE <span id="typing-text" class="typing text-primary"> SUCESSO</span>
             </h1>
             <h2 class="text-zinc-400 italic">
               Mesmo que você esteja começando do zero!
             </h2>
-            <p>
+            <p class="max-w-[400px]">
               Entre para a escola de maquiagem mais completa do Brasil e se
               torne uma maquiadora profissional.
             </p>
 
-            <a class="button-primary" href="https://api.whatsapp.com/send?phone=5548988046418" target="_blank"><button>QUERO SABER MAIS!</button></a>
+            <a class="button-primary" href="https://api.whatsapp.com/send?phone=5548988046418" target="_blank">QUERO SABER MAIS!</a>
           </div>
          
         </div>
@@ -153,7 +165,8 @@
             </button>
           </div>
 
-          <button class="button-primary">ESSA ESCOLA É FEITA PARA MIM!</button>
+          
+          <a class="button-primary" href="https://api.whatsapp.com/send?phone=5548988046418" target="_blank">ESSA ESCOLA É FEITA PARA MIM!</a>
         </div>
       </section>
 
@@ -166,9 +179,9 @@
             class="w-full md:max-w-[500px] lg:max-w-[650px] flex flex-col lg:justify-start lg:items-start gap-4"
           >
             <h1
-              class="min-w-[310px] text-primary text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px]"
+              class="min-w-[310px] text-primary text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] 2xl:text-[48px] leading-4"
             >
-              SAIBA MAIS SOBRE AS<br />PROFISSIONAIS QUE<br />VÃO TE ACOMPANHAR:
+              SAIBA MAIS SOBRE AS<br />PROFISSIONAIS QUE<br class="mt-1 "/>VÃO TE ACOMPANHAR:
             </h1>
             <h2 class="text-base lg:text-lg pr-5 lg:px-0 max-w-[450px]">
               Somos Especialistas e, 15 anos atrás, Tinhamos o mesmo sonho que
@@ -186,9 +199,8 @@
               Por isso, eu quero segurar a sua mão e te guiar pelo caminho certo
               para uma carreira de sucesso como maquiadora profissional!
             </p>
-            <button class="button-primary px-10">
-              ENTRAR PARA NOSSA ACADEMY
-            </button>
+            
+            <a class="button-primary" href="https://api.whatsapp.com/send?phone=5548988046418" target="_blank">ENTRAR PARA NOSSA ACADEMY</a>
           </div>
         </div>
       </section>
@@ -228,7 +240,8 @@
           <p class="text-2xl font-bold xl:text-3xl xl:max-w-[640px]">
             E muito mais benefícios que só quem é membro da escola sabe…
           </p>
-          <button class="button-primary">QUERO TODOS OS BENEFÍCIOS</button>
+        
+          <a class="button-primary" href="https://api.whatsapp.com/send?phone=5548988046418" target="_blank">QUERO TODOS OS BENEFÍCIOS</a>
         </div>
       </section>
 
@@ -281,7 +294,8 @@
                 <img class="w-4 h-4" src="src/assets/seta.png" alt="imagem icone de seta para a direita com fundo amarelo">Novos Conteúdos todos os meses (ao vivo e gravado)
               </li>
             </ul>
-            <button class="button-primary">QUERO TODOS OS CURSOS</button>
+          
+            <a class="button-primary" href="https://api.whatsapp.com/send?phone=5548988046418" target="_blank">QUERO TODOS OS CURSOS</a>
           </div>
         </div>
       </section>
@@ -363,7 +377,7 @@
                     <h2 class="text-primary text-2xl font-bold">Bônus #02:</h2>
                     <p class="font-bold lg:text-xl">Aulas sobre Redes Sociais</p>
                     <p class="text-red-500 text-lg md:text-xl">R$219</p>
-                    <p class="text-green-500 text-xl md:text-2xl lg:text-3xl xl:text-4xl"">Grátis</p>
+                    <p class="text-green-500 text-xl md:text-2xl lg:text-3xl xl:text-4xl">Grátis</p>
                   </div>
                 </div>
               </div>
@@ -409,7 +423,7 @@
               class="font-bold bg-custom-bg-degrade-sec-eigth-black bg-cover bg-center w-[70%] lg:max-w-[500px] rounded-2xl p-4"
             >
               <h2 class="text-3xl pb-1">1º Caminho:</h2>
-              <p>
+              <p class="text-base lg:text-lg">
                 Gastar rios de dinheiro com cursos que te ensinam a maquiar, mas
                 que não te mostram como vender os seus serviços.
               </p>
@@ -421,7 +435,7 @@
               class="font-bold bg-custom-bg-degrade-sec-eigth-yellow bg-cover bg-center w-[70%] rounded-2xl p-4"
             >
               <h2 class="text-3xl pb-1">2º Caminho:</h2>
-              <p>
+              <p class="text-base lg:text-lg">
                 Assinar uma única plataforma, se tornar uma maquiadora
                 profissional e aprender a vender os seus serviços de forma
                 lucrativa.
@@ -437,7 +451,7 @@
       </section>
 
       <section
-      
+        id="vendas"
         class="lazy-bg section-destino flex items-end justify-center md:justify-end lg:justify-center bg-cover bg-center h-[1100px] md:h-[835px] w-full pb-14"
       >
         <div class="w-[1200px] flex justify-end">
@@ -455,12 +469,13 @@
               </p>
               <h2 class="text-2xl">NOSSA ACADEMY</h2>
               <p>Assinatura mensal:</p>
-              <p class="text-2xl text-[#FF7676]">DE: R$197,90 /mês</p>
+              <p class="text-2xl text-[#FF7676]">DE: R$397,90</p>
               <p class="text-3xl">POR APENAS:</p>
               <p class="text-primary text-4xl font-bold lg:text-6xl">
-                R$ 49,90/mês
+                R$197,90
               </p>
-              <button class="button-primary">ENTRAR PARA NOSSA ACADEMY</button>
+              <a class="button-primary" href="https://hotmart.com/pt-br/marketplace/produtos/estetica-15-em-1/K43891872L?sck=HOTMART_SITE&search=e82d8487-ef21-4d49-8d5f-f55397c05ca2&hotfeature=33" target="_blank">ENTRAR PARA NOSSA ACADEMY</a>
+            
               <img
                 loading="lazy"
                 src="src/assets/Logo-pagamento-com-cartoes.webp.png"
@@ -582,6 +597,7 @@
         href="https://api.whatsapp.com/send?phone=5548988046418"
         target="_blank"
         class="fixed bottom-6 right-6 p-4 flex z-50"
+        aria-label="Entre em contato"
       >
         <i
           class="bg-custom-icon-whatssap bg-cover bg-center w-16 h-16"
@@ -599,18 +615,22 @@
           <h2 class="uppercase text-[1.2rem] sm:text-2xl text-white">
             FICOU COM ALGUMA DÚVIDA<br/> SOBRE A NOSSA ESCOLA?
           </h2>
-          <button class="button-primary">
+        
+          <a href="#vendas" class="button-primary">
             SEM DÚVIDAS, VOU COMPRAR AGORA!
-          </button>
-          <button class="button-secundary">QUERO TIRAR A MINHA DÚVIDA</button>
+          </a>
+          
+          <a href="https://api.whatsapp.com/send?phone=5548988046418" target="_blank" class="button-secundary">
+            QUERO TIRAR A MINHA DÚVIDA
+          </a>
         </div>
       </div>
 
       <div>
         <a href="#sessao-hero">
-          <button class="text-white flex gap-2 items-center justify-center">
+          <button class="text-white flex gap-2 items-center justify-center p-6">
             <i
-              class="bg-custom-icon-seta-rodape bg-cover bg-center w-6 h-5 mt-1"
+              class="bg-custom-icon-seta-rodape bg-cover bg-center w-7 h-5 mt-1 "
             ></i
             >VOLTAR AO TOPO
           </button>
@@ -623,5 +643,6 @@
     <script src="src/js/acordeao.js"></script>
     <script src="src/js/carousel-sec-two.js"></script>
     <script src="src/js/lazyLoad.js"></script>
+    <script src="src/js/typewriter.js"></script>
   </body>
 </html>

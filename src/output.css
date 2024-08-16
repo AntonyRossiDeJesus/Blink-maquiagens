@@ -990,8 +990,8 @@ video {
   width: 1rem;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-8 {
@@ -2354,6 +2354,10 @@ video {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2498,8 +2502,8 @@ video {
   font-size: 1.2rem;
 }
 
-.text-\[30px\] {
-  font-size: 30px;
+.text-\[36px\] {
+  font-size: 36px;
 }
 
 .text-base {
@@ -2591,6 +2595,10 @@ video {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+
+.leading-4 {
+  line-height: 1rem;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
@@ -3032,6 +3040,12 @@ video {
 
 body {
   color: white;
+  background: black;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
 }
 
 body.no-scroll {
@@ -3060,13 +3074,30 @@ body.no-scroll {
   transform: translateY(0);
 }
 
+.list-header {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.typing {
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 #whatsapp-btn.show {
   opacity: 1;
   transform: translateY(0);
 }
 
 .text-primary {
-  color: #ecb531;
+  color: #edb72c;
   text-transform: uppercase;
 }
 
@@ -3091,6 +3122,14 @@ body.no-scroll {
   transition: background 0.3s ease;
   max-width: 400px;
 }
+
+/* @media (min-width: 1024px) {
+  .button-primary {
+    font-size: 1.5rem;
+    padding: 12px 20px;
+    max-width: 450px;
+  }
+} */
 
 .button-primary:hover {
   background: linear-gradient(to right, #ecb531, #ffe4a5);
@@ -3459,6 +3498,10 @@ scrollbar-color: #ebcf7f #000;
     line-height: 2.5rem;
   }
 
+  .md\:text-\[42px\] {
+    font-size: 42px;
+  }
+
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -3570,6 +3613,10 @@ scrollbar-color: #ebcf7f #000;
 
   .lg\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .lg\:text-\[48px\] {
+    font-size: 48px;
   }
 
   .lg\:text-lg {

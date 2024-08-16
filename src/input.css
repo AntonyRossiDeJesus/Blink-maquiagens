@@ -4,6 +4,12 @@
 
 body {
   color: white;
+  background: black;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
 }
 
 body.no-scroll {
@@ -32,6 +38,22 @@ body.no-scroll {
   transform: translateY(0);
 }
 
+.list-header {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.typing {
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.75s step-end infinite;
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 @layer components {
   #whatsapp-btn {
     opacity: 0.2;
@@ -46,7 +68,7 @@ body.no-scroll {
 }
 
 .text-primary {
-  color: #ecb531;
+  color: #edb72c;
   text-transform: uppercase;
 }
 
@@ -71,6 +93,14 @@ body.no-scroll {
   transition: background 0.3s ease;
   max-width: 400px;
 }
+
+/* @media (min-width: 1024px) {
+  .button-primary {
+    font-size: 1.5rem;
+    padding: 12px 20px;
+    max-width: 450px;
+  }
+} */
 
 .button-primary:hover {
   background: linear-gradient(to right, #ecb531, #ffe4a5);

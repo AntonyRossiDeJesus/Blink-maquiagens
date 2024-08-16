@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // Verifica se a div tem uma classe específica e aplica a imagem correta
         if (entry.target.classList.contains("section-destino")) {
           entry.target.classList.add(
             isMobile ? "bg-custom-bg-nine-mobile" : "bg-custom-bg-nine-descktop"
