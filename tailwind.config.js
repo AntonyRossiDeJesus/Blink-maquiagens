@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "custom-bg-hero-descktop": "url('./assets/bg-hero-descktop2.webp')",
-        "custom-bg-hero-mobile": "url('./assets/bg-hero-mobile2.webp')",
+        "custom-bg-hero-mobile": "url('./assets/bg-hero-mobile4.webp')",
         "custom-bg-two-descktop": "url('./assets/bg-two-descktop.webp')",
         "custom-bg-two-mobile": "url('./assets/bg-two-mobile.webp')",
         "custom-bg-tree-descktop": "url('./assets/bg-tree-descktop.webp')",
